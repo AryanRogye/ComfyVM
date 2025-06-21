@@ -27,3 +27,8 @@ The idea is:
 All from within a Swift app on iOS.
 
 ---
+
+
+## References
+
+- [the elf 101 guide](https://linux-audit.com/elf-binaries-on-linux-understanding-and-analysis/)

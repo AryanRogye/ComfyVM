@@ -24,10 +24,11 @@ final class BinaryLoader: ObservableObject {
                 let binaryData = try Data(contentsOf: url)
                 let bytes = [UInt8](binaryData)
                 print("Loaded Binary \(bytes.count) bytes")
+                let elfReader = ElfReader(elfBytes: bytes)
+                
             } catch {
                 print("Failed To Load Binary")
             }
-            
         } else {
             print("Binary Not Found In Bundle")
         }
